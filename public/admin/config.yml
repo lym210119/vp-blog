@@ -2,6 +2,7 @@ backend:
   name: github
   branch: main
   repo: lym210119/vp-blog
+  preview_context: my-provider/deployment
 
 media_folder: "images/uploads"
 
