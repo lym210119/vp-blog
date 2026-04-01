@@ -78,8 +78,6 @@ lang: en-US
 
 此数据将可用于页面的其余部分，以及所有自定义和主题组件。
 
-更多信息，参见 [frontmatter](../reference/frontmatter-config)。
-
 ## GitHub 风格的表格 {#github-style-tables}
 
 **输入**
@@ -347,7 +345,6 @@ export default {
 
 在 Shiki 的代码仓库中，可以找到[合法的编程语言列表](https://shiki.style/languages)。
 
-还可以在全局配置中自定义语法高亮主题、配置语言别名和自定义语言标签。有关详细信息，参见 [`markdown` 选项](../reference/site-config#markdown)得到更多信息。
 
 ## 在代码块中实现行高亮 {#line-highlighting-in-code-blocks}
 
@@ -553,8 +550,6 @@ export default {
 }
 ```
 
-查看 [`markdown` 选项](../reference/site-config#markdown) 获取更多信息。
-
 可以在代码块中添加 `:line-numbers` / `:no-line-numbers` 标记来覆盖在配置中的设置。
 
 还可以通过在 `:line-numbers` 之后添加 `=` 来自定义起始行号，例如 `:line-numbers=2` 表示代码块中的行号从 2 开始。
@@ -693,7 +688,7 @@ Can be created using `.foorc.json`.
 npm add -D markdown-it-mathjax3@^4
 ```
 
-```ts [.vitepress/config.ts]
+```ts
 export default {
   markdown: {
     math: true
