@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | 65style</title>
+    <meta name="description" content="65style">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/assets/style.rCLHBuV3.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    
+    <script type="module" src="/assets/app.RqRcIrSD.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.B0bWG2e6.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.8tqBsFWt.js">
+    <link rel="modulepreload" href="/assets/api-examples.md.CDbjqadl.lean.js">
+    <scirpt async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4971335259369317" crossorigin="anonymous"></scirpt>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRR29BLJVR"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-PRR29BLJVR");</script>
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-06d23229><!--[--><!--]--><!--[--><span tabindex="-1" data-v-e45e9955></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-e45e9955>Skip to content</a><!--]--><!----><header class="VPNav" data-v-06d23229 data-v-3b0a475e><div class="VPNavBar" data-v-3b0a475e data-v-41cbfbec><div class="wrapper" data-v-41cbfbec><div class="container" data-v-41cbfbec><div class="title" data-v-41cbfbec><div class="VPNavBarTitle has-sidebar" data-v-41cbfbec data-v-b04d0a5a><a class="title" href="/" data-v-b04d0a5a><!--[--><!--]--><!----><span data-v-b04d0a5a>65style</span><!--[--><!--]--></a></div></div><div class="content" data-v-41cbfbec><div class="content-body" data-v-41cbfbec><!--[--><!--]--><div class="VPNavBarSearch search" data-v-41cbfbec><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-41cbfbec data-v-71ee49bb><span id="main-nav-aria-label" class="visually-hidden" data-v-71ee49bb> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/posts/wsl2-proxy.html" tabindex="0" data-v-71ee49bb data-v-49347781><!--[--><span data-v-49347781>Blog</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/css/tab-circle-border.html" tabindex="0" data-v-71ee49bb data-v-49347781><!--[--><span data-v-49347781>CSS Tricks</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://aria2.65style.eu.org" target="_blank" rel="noreferrer" tabindex="0" data-v-71ee49bb data-v-49347781><!--[--><span data-v-49347781>Aria2</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://oneindex.65style.eu.org" target="_blank" rel="noreferrer" tabindex="0" data-v-71ee49bb data-v-49347781><!--[--><span data-v-49347781>OneDrive</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://tv.65style.eu.org" target="_blank" rel="noreferrer" tabindex="0" data-v-71ee49bb data-v-49347781><!--[--><span data-v-49347781>TV</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-41cbfbec data-v-941e1857><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-941e1857 data-v-895b5a87 data-v-0aa1bd6b><span class="check" data-v-0aa1bd6b><span class="icon" data-v-0aa1bd6b><!--[--><span class="vpi-sun sun" data-v-895b5a87></span><span class="vpi-moon moon" data-v-895b5a87></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-41cbfbec data-v-a15cb967 data-v-b0c8fd30><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-b0c8fd30 data-v-c32d1be0><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-41cbfbec data-v-206bced6 data-v-a21ac241><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-a21ac241><span class="vpi-more-horizontal icon" data-v-a21ac241></span></button><div class="menu" data-v-a21ac241><div class="VPMenu" data-v-a21ac241 data-v-9d62f104><!----><!--[--><!--[--><!----><div class="group" data-v-206bced6><div class="item appearance" data-v-206bced6><p class="label" data-v-206bced6>Appearance</p><div class="appearance-action" data-v-206bced6><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-206bced6 data-v-895b5a87 data-v-0aa1bd6b><span class="check" data-v-0aa1bd6b><span class="icon" data-v-0aa1bd6b><!--[--><span class="vpi-sun sun" data-v-895b5a87></span><span class="vpi-moon moon" data-v-895b5a87></span><!--]--></span></span></button></div></div></div><div class="group" data-v-206bced6><div class="item social-links" data-v-206bced6><div class="VPSocialLinks social-links-list" data-v-206bced6 data-v-b0c8fd30><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-b0c8fd30 data-v-c32d1be0><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-41cbfbec data-v-c6ec3ed3><span class="container" data-v-c6ec3ed3><span class="top" data-v-c6ec3ed3></span><span class="middle" data-v-c6ec3ed3></span><span class="bottom" data-v-c6ec3ed3></span></span></button></div></div></div></div><div class="divider" data-v-41cbfbec><div class="divider-line" data-v-41cbfbec></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-06d23229 data-v-d28133fe><div class="container" data-v-d28133fe><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-d28133fe><span class="vpi-align-left menu-icon" data-v-d28133fe></span><span class="menu-text" data-v-d28133fe>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-d28133fe data-v-0c7f99fc><button data-v-0c7f99fc>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-06d23229 data-v-d42af5b4><div class="curtain" data-v-d42af5b4></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-d42af5b4><span class="visually-hidden" id="sidebar-aria-label" data-v-d42af5b4> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="no-transition group" data-v-5737b8da><section class="VPSidebarItem level-0" data-v-5737b8da data-v-7b939af7><div class="item" role="button" tabindex="0" data-v-7b939af7><div class="indicator" data-v-7b939af7></div><h2 class="text" data-v-7b939af7>Blog</h2><!----></div><div class="items" data-v-7b939af7><!--[--><div class="VPSidebarItem level-1 is-link" data-v-7b939af7 data-v-7b939af7><div class="item" data-v-7b939af7><div class="indicator" data-v-7b939af7></div><a class="VPLink link link" href="/posts/wsl2-proxy.html" data-v-7b939af7><!--[--><p class="text" data-v-7b939af7>WSL2配置代理</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-7b939af7 data-v-7b939af7><div class="item" data-v-7b939af7><div class="indicator" data-v-7b939af7></div><a class="VPLink link link" href="/posts/mobile-wan.html" data-v-7b939af7><!--[--><p class="text" data-v-7b939af7>移动薅羊毛流量领取攻略</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="no-transition group" data-v-5737b8da><section class="VPSidebarItem level-0" data-v-5737b8da data-v-7b939af7><div class="item" role="button" tabindex="0" data-v-7b939af7><div class="indicator" data-v-7b939af7></div><h2 class="text" data-v-7b939af7>CSS Tricks</h2><!----></div><div class="items" data-v-7b939af7><!--[--><div class="VPSidebarItem level-1 is-link" data-v-7b939af7 data-v-7b939af7><div class="item" data-v-7b939af7><div class="indicator" data-v-7b939af7></div><a class="VPLink link link" href="/css/tab-circle-border.html" data-v-7b939af7><!--[--><p class="text" data-v-7b939af7>Tab Circle Border</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-06d23229 data-v-7ee8dcd8><div class="VPDoc has-sidebar has-aside" data-v-7ee8dcd8 data-v-717d05ae><!--[--><!--]--><div class="container" data-v-717d05ae><div class="aside" data-v-717d05ae><div class="aside-curtain" data-v-717d05ae></div><div class="aside-container" data-v-717d05ae><div class="aside-content" data-v-717d05ae><div class="VPDocAside" data-v-717d05ae data-v-512ff3b3><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-512ff3b3 data-v-a63b3d1a><div class="content" data-v-a63b3d1a><div class="outline-marker" data-v-a63b3d1a></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-a63b3d1a>On this page</div><ul class="VPDocOutlineItem root" data-v-a63b3d1a data-v-c0ecf806><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-512ff3b3></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-717d05ae><div class="content-container" data-v-717d05ae><!--[--><!--]--><main class="main" data-v-717d05ae><div style="position:relative;" class="vp-doc _api-examples" data-v-717d05ae><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">import { useData } from &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">const { theme, page, frontmatter } = useData()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/script&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ theme }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ page }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ frontmatter }}&lt;/pre&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;search&quot;: {
+    &quot;provider&quot;: &quot;local&quot;
+  },
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;Blog&quot;,
+      &quot;link&quot;: &quot;/posts/wsl2-proxy&quot;
+    },
+    {
+      &quot;text&quot;: &quot;CSS Tricks&quot;,
+      &quot;link&quot;: &quot;/css/tab-circle-border&quot;
+    },
+    {
+      &quot;text&quot;: &quot;Aria2&quot;,
+      &quot;link&quot;: &quot;https://aria2.65style.eu.org&quot;
+    },
+    {
+      &quot;text&quot;: &quot;OneDrive&quot;,
+      &quot;link&quot;: &quot;https://oneindex.65style.eu.org&quot;
+    },
+    {
+      &quot;text&quot;: &quot;TV&quot;,
+      &quot;link&quot;: &quot;https://tv.65style.eu.org&quot;
+    }
+  ],
+  &quot;sidebar&quot;: [
+    {
+      &quot;text&quot;: &quot;Blog&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;WSL2配置代理&quot;,
+          &quot;link&quot;: &quot;/posts/wsl2-proxy&quot;
+        },
+        {
+          &quot;text&quot;: &quot;移动薅羊毛流量领取攻略&quot;,
+          &quot;link&quot;: &quot;/posts/mobile-wan&quot;
+        }
+      ]
+    },
+    {
+      &quot;text&quot;: &quot;CSS Tricks&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;Tab Circle Border&quot;,
+          &quot;link&quot;: &quot;/css/tab-circle-border&quot;
+        }
+      ]
+    }
+  ],
+  &quot;socialLinks&quot;: [
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://github.com/vuejs/vitepress&quot;
+    }
+  ],
+  &quot;footer&quot;: {
+    &quot;message&quot;: &quot;Released under the MIT License.&quot;,
+    &quot;copyright&quot;: &quot;Copyright © 2023-present 65style&quot;
+  }
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-717d05ae data-v-ad2757b8><!--[--><!--]--><!----><nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-ad2757b8><span class="visually-hidden" id="doc-footer-aria-label" data-v-ad2757b8>Pager</span><div class="pager" data-v-ad2757b8><!----></div><div class="pager" data-v-ad2757b8><a class="VPLink link pager-link next" href="/posts/wsl2-proxy.html" data-v-ad2757b8><!--[--><span class="desc" data-v-ad2757b8>Next page</span><span class="title" data-v-ad2757b8>WSL2配置代理</span><!--]--></a></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter has-sidebar" data-v-06d23229 data-v-02c9b274><div class="container" data-v-02c9b274><p class="message" data-v-02c9b274>Released under the MIT License.</p><p class="copyright" data-v-02c9b274>Copyright © 2023-present 65style</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"api-examples.md\":\"CDbjqadl\",\"css_tab-circle-border.md\":\"6TF3-7A0\",\"css_text-ellipsis.md\":\"B8XBwyzz\",\"index.md\":\"C8J5AKgO\",\"markdown-examples.md\":\"CYnaU4Xi\",\"posts_mobile-wan.md\":\"rTKhTzkx\",\"posts_wsl2-proxy.md\":\"BGusOPiM\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"65style\",\"description\":\"65style\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"search\":{\"provider\":\"local\"},\"nav\":[{\"text\":\"Blog\",\"link\":\"/posts/wsl2-proxy\"},{\"text\":\"CSS Tricks\",\"link\":\"/css/tab-circle-border\"},{\"text\":\"Aria2\",\"link\":\"https://aria2.65style.eu.org\"},{\"text\":\"OneDrive\",\"link\":\"https://oneindex.65style.eu.org\"},{\"text\":\"TV\",\"link\":\"https://tv.65style.eu.org\"}],\"sidebar\":[{\"text\":\"Blog\",\"items\":[{\"text\":\"WSL2配置代理\",\"link\":\"/posts/wsl2-proxy\"},{\"text\":\"移动薅羊毛流量领取攻略\",\"link\":\"/posts/mobile-wan\"}]},{\"text\":\"CSS Tricks\",\"items\":[{\"text\":\"Tab Circle Border\",\"link\":\"/css/tab-circle-border\"}]}],\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/vuejs/vitepress\"}],\"footer\":{\"message\":\"Released under the MIT License.\",\"copyright\":\"Copyright © 2023-present 65style\"}},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
