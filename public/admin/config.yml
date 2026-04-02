@@ -2,9 +2,9 @@ backend:
   name: github
   repo: lym210119/vp-blog
   branch: main
-  client_id: 'Ov23li4P1rJmx2UWaWmP'
   scope: 'repo'
-  base_url: 'https://65style.eu.org'
+  site_domain: '65style.eu.org'
+  base_url: 'https://www.netify.com'
   auth_endpoint: 'auth'
 
 media_folder: "images/uploads"
