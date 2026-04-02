@@ -2,7 +2,7 @@ backend:
   name: github
   repo: lym210119/vp-blog
   branch: main
-  base_url: https://github.com
+  base_url: https://65style.eu.org
   auth_endpoint: auth
 
 media_folder: "images/uploads"
