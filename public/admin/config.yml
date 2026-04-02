@@ -1,11 +1,5 @@
 backend:
-  name: github
-  repo: lym210119/vp-blog
-  branch: main
-  scope: 'repo'
-  site_domain: '65style.eu.org'
-  base_url: 'https://www.netify.com'
-  auth_endpoint: 'auth'
+name: git-gateway
 
 media_folder: "images/uploads"
 
