@@ -1,8 +1,11 @@
 backend:
   name: github
-  branch: main
   repo: lym210119/vp-blog
-  preview_context: my-provider/deployment
+  branch: main
+  client_id: 'Ov23li4P1rJmx2UWaWmP'
+  scope: 'repo'
+  base_url: 'https://65style.eu.org'
+  auth_endpoint: 'auth'
 
 media_folder: "images/uploads"
 
