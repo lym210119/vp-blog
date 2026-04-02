@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: lym210119/vp-blog
+  name: git-gateway
   branch: main
-  base_url: https://65style.eu.org
-  auth_endpoint: auth
 
 media_folder: "images/uploads"
 
