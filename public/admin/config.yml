@@ -2,7 +2,7 @@ backend:
   name: github
   repo: lym210119/vp-blog      # 你的 GitHub 仓库
   branch: main                       # 默认分支
-  base_url: https://65style.eu.org
+  base_url: https://api.netlify.com
   auth_endpoint: auth
 
 # 启用本地开发模式
