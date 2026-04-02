@@ -1,8 +1,14 @@
 backend:
   name: git-gateway
   branch: main
+  repo: lym210119/vp-blog
 
-media_folder: "images/uploads"
+# 启用本地开发模式
+local_backend: true
+
+# 媒体文件配置
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
