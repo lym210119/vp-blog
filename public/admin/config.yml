@@ -1,5 +1,5 @@
 backend:
-name: git-gateway
+  name: git-gateway
 
 media_folder: "images/uploads"
 
