@@ -81,6 +81,8 @@ title: 移动薅羊毛流量领取攻略
 👉 [点击参与](https://dev.coc.10086.cn/coc/canvas/package-h5-canvas/online/zhongyiwangda?pageId=1696418506034348032&channelId=P00000132701)  
 （领取后立即生效，有效期12个月，12个月到期后流量包自动失效）
 
+---
+
 ### 💡 领流量小贴士
 
 ✔ 大部分链接点击后会自动跳转至移动官方页面或APP。
