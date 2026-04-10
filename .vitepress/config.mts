@@ -43,21 +43,22 @@ export default defineConfig({
       { text: 'TV', link: 'https://tv.65style.eu.org' },
     ],
 
-    // sidebar: [
-    //   {
-    //     text: 'Blog',
-    //     items: [
-    //       { text: 'WSL2配置代理', link: '/posts/wsl2-proxy' },
-    //       { text: '移动薅羊毛流量领取攻略', link: '/posts/mobile-wan' },
-    //     ],
-    //   },
-    //   {
-    //     text: 'CSS Tricks',
-    //     items: [
-    //       { text: 'Tab Circle Border', link: '/css/tab-circle-border' },
-    //     ],
-    //   },
-    // ],
+    sidebar: [
+      {
+        text: 'Blog',
+        items: [
+          { text: '用 Cursor 打造生产级产品：全流程实战指南', link: '/posts/corsor-guide' },
+          { text: 'WSL2配置代理', link: '/posts/wsl2-proxy' },
+          { text: '移动薅羊毛流量领取攻略', link: '/posts/mobile-wan' },
+        ],
+      },
+      {
+        text: 'CSS Tricks',
+        items: [
+          { text: 'Tab Circle Border', link: '/css/tab-circle-border' },
+        ],
+      },
+    ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
